@@ -7,7 +7,10 @@
       tabBackgroundColor="#53ba82"
       selectedTabTextColor="#fff"
     >
-      <TabViewItem title="Données">
+      <TabViewItem title="Monde">
+        <WorldData />
+      </TabViewItem>
+      <TabViewItem title="Pays">
         <Data />
       </TabViewItem>
       <TabViewItem title="Carte">
@@ -20,12 +23,14 @@
 <script>
 import Map from "./Map";
 import Data from "./Data";
+import WorldData from "./WorldData";
 
 export default {
   name: "data",
   components: {
     Data,
     Map,
+    WorldData
   },
   data() {
     return {
@@ -34,7 +39,7 @@ export default {
   },
   methods: {
     getCountries() {
-      fetch(this.baseUrl + `countries`)
+      fetch(this.baseUrl + `summary`)
         .then(response => response.json())
         .then(data => {
           this.$store.dispatch("updateCountries", data);

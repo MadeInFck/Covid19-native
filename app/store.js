@@ -8,15 +8,14 @@ export default new Vuex.Store({
     baseUrl: "https://api.covid19api.com/",
     countries: null,
     slugs: null,
-    worldData: null
+    worldData: []
   },
   mutations: {
     setCountries: (state, data) => {
-      console.log(data);
       state.worldData = data.Global;
       let array = [];
       let arraySlug = [];
-      for (let item in data.Countries) {
+      for (const item in data.Countries) {
         array.push(data.Countries[item].Country);
         arraySlug.push(data.Countries[item].Slug);
       }
