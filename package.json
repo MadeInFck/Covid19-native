@@ -1,0 +1,42 @@
+{
+  "name": "covid19",
+  "version": "1.0.0",
+  "description": "Following Covid 19 spreading throughout the world",
+  "author": "MadeInFck <webmaster@madeinfck.com>",
+  "license": "MIT",
+  "nativescript": {
+    "id": "com.mickaelfonck.covid19",
+    "templateVersion": "v2",
+    "tns-ios": {
+      "version": "6.5.0"
+    },
+    "tns-android": {
+      "version": "6.5.0"
+    }
+  },
+  "dependencies": {
+    "@nativescript/theme": "^2.2.1",
+    "@vue/devtools": "^5.0.6",
+    "install": "^0.13.0",
+    "nativescript-mapbox": "^4.4.1",
+    "nativescript-socketio": "^3.2.1",
+    "nativescript-toasty": "^1.3.0",
+    "nativescript-vue": "^2.5.0",
+    "nativescript-vue-devtools": "^1.2.0",
+    "npm": "^6.14.4",
+    "tns-android": "^6.5.0",
+    "tns-core-modules": "^6.5.1",
+    "tns-ios": "^6.5.0",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "nativescript-dev-webpack": "^1.0.0",
+    "nativescript-vue-template-compiler": "^2.5.0",
+    "nativescript-worker-loader": "~0.9.0",
+    "node-sass": "^4.9.2",
+    "vue-loader": "^15.4.0"
+  }
+}
